@@ -17,14 +17,28 @@ $(document).ready(function(){
           userResponse -= 1;
       };
 
-      var developer = $("input:radio[name=developer]:checked").val();
-        if (developer === "yes"){
-          userResponse += 2;
-          alert("yes")
-        } else if (company === "no"){
-          alert("no")
-            userResponse -= 1;
-        };
+    var developer = $("input:radio[name=developer]:checked").val();
+    if (developer === "yes"){
+      userResponse += 2;
+      alert("yes")
+    } else if (company === "no"){
+      alert("no")
+      userResponse -= 1;
+    };
+
+    var developer = $("input:radio[name=difficulty]:checked").val();
+    if (difficulty === "yes"){
+      userResponse -= 1;
+      alert("yes")
+    } else if (difficulty === "no"){
+      alert("no")
+      userResponse += 2;
+    };
+
+
+
+
+
 
 
 
