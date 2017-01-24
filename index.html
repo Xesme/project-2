@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Track Suggester</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/epicodus.png" alt="epicodus logo">
+      <h1> Which Epicodus track should you take?</h1>
+        <!-- Question 1  -->
+        <form id="e-quiz">
+          <div class="radio">
+            <h3 class="q1">Are you interested in working for a big company?</h3>
+            <label>Yes!</label>
+            <input type="radio" name="company" value="yes" checked>
+            <label>No.</label>
+            <input type="radio" name="company" value="no">
+          </div>
+          <!-- Question 2 -->
+          <div class="radio">
+            <h3 class="q1">Do you want to be a full-stack developer?</h3>
+            <label>Yes!</label>
+            <input type="radio" name="developer" value="yes" checked>
+            <label>No.</label>
+            <input type="radio" name="developer" value="no">
+          </div>
+          <!-- Question 3  -->
+          <div class="radio">
+            <h3 class="q1">Do you want to learn an easier langauge first?</h3>
+            <label>Yes!</label>
+            <input type="radio" name="difficulty" value="yes" checked>
+            <label>No.</label>
+            <input type="radio" name="difficulty" value="no">
+          </div>
+          <!-- Question 4  -->
+          <div class="radio">
+            <h3 class="q1">Do you want to develop projects quickly?</h3>
+            <label>Yes!</label>
+            <input type="radio" name="speed" value="yes" checked>
+            <label>No.</label>
+            <input type="radio" name="speed" value="no">
+          </div>
+          <!-- Question 5  -->
+          <div class="radio">
+            <h3 class="q1">Do you want to learn a popular language?</h3>
+            <label>Yes!</label>
+            <input type="radio" name="popular" value="yes" checked>
+            <label>No.</label>
+            <input type="radio" name="popular" value="no">
+          </div>
+          <!-- Results are below -->
+          <button type="submit" class="btn">Get your results!</button>
+          <div class="results">
+            <div id="c">
+              <img src="img/c.png" alt="c sharp logo">
+              <h2> You should learn C#!</h2>
+            </div>
+            <div id="ruby">
+              <img src="img/ruby.png" alt="ruby logo">
+              <h2> You should learn Ruby!</h2>
+            </div>
+            <div id="php">
+              <img src="img/php.png" alt="php logo">
+              <h2> You should learn PHP!</h2>
+            </div>
+          </div>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
