@@ -20,42 +20,43 @@ $(document).ready(function(){
     var developer = $("input:radio[name=developer]:checked").val();
     if (developer === "yes"){
       userResponse += 2;
-      alert("yes")
     } else if (company === "no"){
-      alert("no")
       userResponse -= 1;
     };
 
-    var developer = $("input:radio[name=difficulty]:checked").val();
+    var difficulty = $("input:radio[name=difficulty]:checked").val();
     if (difficulty === "yes"){
       userResponse -= 1;
-      alert("yes")
     } else if (difficulty === "no"){
-      alert("no")
+      userResponse += 2;
+    };
+
+    var speed = $("input:radio[name=speed]:checked").val();
+    if (speed === "yes"){
+      userResponse += 1;
+    } else if (speed === "no"){
+      userResponse += 2;
+    };
+
+    var popular = $("input:radio[name=popular]:checked").val();
+    if (popular === "yes"){
+      userResponse -= 1;
+    } else if (popular === "no"){
       userResponse += 2;
     };
 
 
-
-
-
-
-
-
-
-      if (userResponse <= -1){
-        // $(".result").show("#php")
+      if (userResponse <= 0){
         alert("php")
         $(".results").append("You got PHP!");
         $("#php").show();
         $("#e-quiz").hide();
-      } else if (userResponse === 1) {
-        // $(".result").show("ruby")
+      } else if (userResponse <= 4) {
         alert("ruby")
         $(".results").append("You got Ruby!");
         $("#ruby").show();
         $("#e-quiz").hide();
-      } else if (userResponse >= 2) {
+      } else if (userResponse >= 5) {
         alert("C#")
         $(".results").append("You got C#!");
         $("#c").show();
