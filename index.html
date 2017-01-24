@@ -44,7 +44,7 @@
             <input type="radio" name="popular" value="no">no!</p>
           </div><br>
           <!-- Submit button -->
-          <button type="submit" class="btn">Get your results!</button>
+          <button id="submit-btn" type="submit" class="btn">Get your results!</button>
         </form>
           <!-- Results are below -->
           <div class="results">
@@ -58,7 +58,8 @@
               <img src="img/php.png" alt="php logo">
               <p> You should Learn PHP! It can be used for software and for server sive web developement.</p>
             </div>
-          </div>
+          </div><br>
+          <input id="reset-btn" type="reset" value="Take the quiz again!" onClick="window.location.reload()">
       </div>
     </div>
   </body>

@@ -3,7 +3,7 @@ padding: 30px;
 }
 
 .radio {
- 
+
 }
 
 #php {
@@ -16,4 +16,11 @@ padding: 30px;
 
 #c {
   display: none;
+}
+
+#reset-btn {
+  display: none;
+  position: absolute;
+  right: 250px;
+  bottom: 100px;
 }

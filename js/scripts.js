@@ -42,6 +42,7 @@ $(document).ready(function(){
     if (popular === "yes"){
       userResponse -= 1;
     } else if (popular === "no"){
+
       userResponse += 2;
     };
 
@@ -49,18 +50,18 @@ $(document).ready(function(){
       if (userResponse <= 0){
         alert("php")
         $(".results").append("You got PHP!");
-        $("#php").show();
-        $("#e-quiz").hide();
+        $("#php, #reset-btn").show();
+        $("#e-quiz, #submit-btn").hide();
       } else if (userResponse <= 4) {
         alert("ruby")
         $(".results").append("You got Ruby!");
-        $("#ruby").show();
-        $("#e-quiz").hide();
+        $("#ruby, #reset-btn").show();
+        $("#e-quiz, #submit-btn").hide();
       } else if (userResponse >= 5) {
         alert("C#")
         $(".results").append("You got C#!");
-        $("#c").show();
-        $("#e-quiz").hide();
+        $("#c, #reset-btn").show();
+        $("#e-quiz, #submit-btn").hide();
       };
 
   });
