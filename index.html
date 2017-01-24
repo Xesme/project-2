@@ -10,38 +10,38 @@
   </head>
   <body>
     <div class="container">
-      <!-- <img src="img/epicodus.png" alt="epicodus logo"> -->
-      <h1> Which Epicodus track should you take?</h1>
+      <img src="img/epicodus.png" alt="epicodus logo">
+      <h1> Which Epicodus track should you take?</h1><br>
         <!-- Question 1  -->
         <form id="e-quiz">
           <div class="radio">
             <legend>Are you interested in working for startups?</legend>
-            <p><input type="radio" name="company" value="yes" checked> Yes!</p>
-            <p><input type="radio" name="company" value="no">No!</p>
+            <p><input type="radio" name="company" value="yes" checked> Yes, I am looking forward to freelancing or working for small startup companies.</p>
+            <p><input type="radio" name="company" value="no">No, I envision myself working for well established large companies.</p>
           </div><br>
           <!-- Question 2 -->
           <div class="radio">
             <legend>Are you interested in developing games?</legend>
-            <p><input type="radio" name="developer" value="yes" checked> Yes!</p>
-            <p><input type="radio" name="developer" value="no">No!</p>
+            <p><input type="radio" name="developer" value="yes" checked> Yes, I do!</p>
+            <p><input type="radio" name="developer" value="no">No, I am more interested in web developement! </p>
           </div><br>
           <!-- Question 3  -->
           <div class="radio">
-            <legend>Do you want to learn an easier langauge first?</legend>
-            <p><input type="radio" name="difficulty" value="yes" checked>Yes!</p>
-            <p><input type="radio" name="difficulty" value="no">No!</p>
+            <legend>What level of difficulty are you interested in learning?</legend>
+            <p><input type="radio" name="difficulty" value="yes" checked>I want to start off by learning an easier backend language!</p>
+            <p><input type="radio" name="difficulty" value="no">Challenges interest me. Bring it on!</p>
           </div><br>
           <!-- Question 4  -->
           <div class="radio">
             <legend>Do you want to develop projects quickly?</legend>
-            <p><input type="radio" name="speed" value="yes" checked>Yes!</p>
-            <p><input type="radio" name="speed" value="no">No!</p>
+            <p><input type="radio" name="speed" value="yes" checked>Yes, I want to be able to produce products quickly for clients!</p>
+            <p><input type="radio" name="speed" value="no">No, I like to take my time and build complex programs!</p>
           </div><br>
           <!-- Question 5  -->
           <div class="radio">
             <legend>Do you want to learn a popular language?</legend>
             <p><input type="radio" name="popular" value="yes" checked>Yes!</p>
-            <input type="radio" name="popular" value="no">no!</p>
+            <input type="radio" name="popular" value="no">No!</p>
           </div><br>
           <!-- Submit button -->
           <button id="submit-btn" type="submit" class="btn">Get your results!</button>
@@ -49,16 +49,18 @@
           <!-- Results are below -->
           <div class="results">
             <div id="c">
-              <img src="img/c.png" alt="c sharp logo">
+              <img src="img/c.png" alt="c sharp logo"><br>
+              <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
             </div>
             <div id="ruby">
-              <img src="img/ruby.png" alt="ruby logo">
+              <img src="img/ruby.png" alt="ruby logo"><br>
+              <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
             </div>
             <div id="php">
-              <img src="img/php.png" alt="php logo">
-              <p> You should Learn PHP! It can be used for software and for server sive web developement.</p>
+              <img src="img/php.png" alt="php logo"><br>
+              <p> PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.</p>
             </div>
-          </div><br>
+          </div>
           <input id="reset-btn" type="reset" value="Take the quiz again!" onClick="window.location.reload()">
       </div>
     </div>

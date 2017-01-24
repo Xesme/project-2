@@ -19,9 +19,9 @@ $(document).ready(function(){
 
     var developer = $("input:radio[name=developer]:checked").val();
     if (developer === "yes"){
-      userResponse += 2;
+      userResponse += 3;
     } else if (company === "no"){
-      userResponse -= 1;
+      userResponse -= 3;
     };
 
     var difficulty = $("input:radio[name=difficulty]:checked").val();
@@ -40,26 +40,22 @@ $(document).ready(function(){
 
     var popular = $("input:radio[name=popular]:checked").val();
     if (popular === "yes"){
-      userResponse -= 1;
+      userResponse += 1;
     } else if (popular === "no"){
-
-      userResponse += 2;
+      userResponse -= 2;
     };
 
 
       if (userResponse <= 0){
-        alert("php")
-        $(".results").append("You got PHP!");
+        $(".results").append("Learn more about PHP <a href='https://www.epicodus.com/php'>here!</a> ");
         $("#php, #reset-btn").show();
         $("#e-quiz, #submit-btn").hide();
-      } else if (userResponse <= 4) {
-        alert("ruby")
-        $(".results").append("You got Ruby!");
+      } else if (userResponse <= 4 && userResponse >= 0) {
+        $(".results").append("Learn more about Ruby <a href='https://www.epicodus.com/ruby'>here!</a>!");
         $("#ruby, #reset-btn").show();
         $("#e-quiz, #submit-btn").hide();
       } else if (userResponse >= 5) {
-        alert("C#")
-        $(".results").append("You got C#!");
+        $(".results").append("Learn more about C# <a href=https://www.epicodus.com/c-sharp'>here!</a>!");
         $("#c, #reset-btn").show();
         $("#e-quiz, #submit-btn").hide();
       };
