@@ -1,6 +1,6 @@
 # Epicodus Track Suggester
 
-(GitHub)[https://xesme.github.io/project-2/]
+[GitHub](https://xesme.github.io/project-2/)
 
 #### A quiz to determine which Epicodus track you should take, 2017_
 
@@ -12,7 +12,7 @@ _This a web browser based quiz to provide the user with helpful information on w
 
 ## Setup/Installation Requirements
 
-* _Visit (Xia's Github)[https://github.com/Xesme/project-2.git]_
+* _Visit [Xia's Github](https://github.com/Xesme/project-2.git)_
 * _Click on the clone or download button_
 * _Download the zip (unzip to desktop) or open in desktop_
 * _Open the folder and double click index.html_
